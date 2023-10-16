@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+:root {
+  --body-font: 'Open Sans', sans-serif;
+  --heading-font: 'Open Sans', sans-serif;
+  --highlight-color: #E82277;
+  --sub-color: rgba(0, 0, 0, 0.6);
+  --button-text: #ffffff;
+}
+body { font-family: var(--body-font); }
+h1, h2 { font-weight: normal; color: #E82277; font-family: var(--heading-font); }
+h1.title { color: var(--highlight-color); font-size: 17px; }
+.sub-title { color: var(--sub-color); font-size: 17px; }
+.back-button { color: var(--sub-color); }
+
+.action-button.mat-mdc-unelevated-button:not(:disabled) {
+  background-color: var(--highlight-color);
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0 15px;
+  width: 160px;
+  color: var(--button-text);
+}

@@ -1,0 +1,10 @@
+<mat-icon class="back-button">arrow_back</mat-icon>
+<h1 class="title">Create Custom Room</h1>
+<div class="sub-title">{{ isRemoveModeOn ? 'Click on a corner to remove it.' : 'Drag corner points to adjust your room shape and tap on a wall to add a new corner point.'}}</div>
+<div #viewContainer class="view-container">
+  <svg></svg>
+</div>
+<div class="action-buttons-container">
+  <button mat-flat-button [disabled]="removeButtonDisabled" class="action-button" (click)="toggleRemoveCornerMode()">{{ isRemoveModeOn ? 'Add / Move Corner' :'Remove Corner'}}</button>
+  <button mat-flat-button class="action-button" (click)="confirmRoom()">Confirm Room</button>
+</div>

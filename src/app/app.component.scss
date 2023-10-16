@@ -1,0 +1,52 @@
+.view-container {
+  width: 70%;
+  height: 500px;
+  margin: 10px auto 40px auto;
+}
+
+svg {
+  margin: 0 auto;
+  width: 90%;
+  height: 90%;
+  overflow: visible;
+}
+path{
+  fill: lightsalmon;
+  stroke: salmon;
+  stroke-width: 5px;
+}
+
+.title {
+  text-align: center;
+}
+
+.sub-title {
+  text-align: center;
+}
+
+.action-buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.action-button:first-child {
+  margin-right: 20px;
+}
+
+.back-button {
+  position: absolute;
+  left: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px)  {
+  .view-container {
+    height: 400px;
+  }
+}
+
+@media (max-width: 576px)  {
+  .view-container {
+    height: 250px;
+  }
+}
